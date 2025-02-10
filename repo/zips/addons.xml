@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="repository.peno64" name="peno64 repository" version="1.5" provider-name="peno64">
+<addons><addon id="repository.jellyfin.kodi" name="Kodi Jellyfin Addons" version="1.0.0" provider-name="null_pointer,angelblue05,sualfred,im85288,xnappo">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0" />
+  </requires>
+  <extension point="xbmc.addon.repository" name="Kodi Jellyfin Repository">
+    <dir>
+      <info compressed="false">https://repo.jellyfin.org/releases/client/kodi/addons.xml</info>
+      <checksum>https://repo.jellyfin.org/releases/client/kodi/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.jellyfin.org/releases/client/kodi</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Kodi Jellyfin Addon Repository</summary>
+    <description>This repo contains addons related to the Jellyfin project</description>
+    <disclaimer />
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon><addon id="repository.peno64" name="peno64 repository" version="1.6" provider-name="peno64">
     <extension point="xbmc.addon.repository" name="peno64 repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml</info>
